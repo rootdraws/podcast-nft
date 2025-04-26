@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+# 24 Hour NFT Minter
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Each Episode of the AlphaGrowth.Fun podcast features prominent Crypto Artists from 𝕏.
 
-Try running some of the following tasks:
+This Contract allows an Open Edition Mint with a time limit of 24 Hours.
+NFTs are stored on Arweave, and TokenURI is updated on the Frontend through the MINT button.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+The podcast interviews multiple ecosystems, so to maintain flexibility, a new NFT contract will be deployed for each episode.
+
+100% of sales go to support the artist for that episode, and that 0xAddress is coded into the contract.
