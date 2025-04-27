@@ -5,9 +5,9 @@ async function main() {
   const PodcastNFT = await ethers.getContractFactory("PodcastNFT");
   const podcastNFT = await PodcastNFT.deploy();
 
-  await podcastNFT.deployed();
+  await podcastNFT.waitForDeployment();
 
-  console.log("PodcastNFT deployed to:", podcastNFT.address);
+  console.log("PodcastNFT deployed to:", podcastNFT.target);
 }
 
 main().catch((error) => {
