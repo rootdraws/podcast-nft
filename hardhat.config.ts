@@ -14,11 +14,17 @@ const config: HardhatUserConfig = {
       url: process.env.ARBITRUM_RPC_URL || "",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     },
+    unichain: {
+      url: process.env.UNICHAIN_RPC_URL || "https://rpc-mainnet.unichain.org",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      chainId: 1231
+    },
   },
   etherscan: {
     apiKey: {
       sepolia: process.env.ETHERSCAN_API_KEY || "",
       arbitrumOne: process.env.ARBISCAN_API_KEY || "",
+      unichain: process.env.UNICHAIN_API_KEY || "",
     },
   },
 };
