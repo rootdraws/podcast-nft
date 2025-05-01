@@ -15,7 +15,7 @@ const config: HardhatUserConfig = {
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     },
     unichain: {
-      url: process.env.UNICHAIN_RPC_URL || "https://rpc-mainnet.unichain.org",
+      url: process.env.UNICHAIN_RPC_URL || "https://unichain-rpc.publicnode.com",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
       chainId: 130
     },
@@ -26,6 +26,16 @@ const config: HardhatUserConfig = {
       arbitrumOne: process.env.ARBISCAN_API_KEY || "",
       unichain: process.env.UNISCAN_API_KEY || "",
     },
+    customChains: [
+      {
+        network: "unichain",
+        chainId: 130,
+        urls: {
+          apiURL: "https://api.uniscan.xyz/api",
+          browserURL: "https://uniscan.xyz"
+        }
+      }
+    ]
   },
 };
 
