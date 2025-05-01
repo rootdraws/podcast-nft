@@ -24,7 +24,7 @@ contract PodcastNFT is ERC721URIStorage, Ownable {
 
     // Constructor sets NFT name/symbol
     constructor()
-        ERC721("TheGrowthAudit", "ALPHA")
+        ERC721("The Growth Audit", "AGPOD")
         Ownable(msg.sender)
     {}
 
