@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 // Open edition NFT sale with a 24-hour time window
 contract PodcastNFT is ERC721URIStorage, Ownable {
     // Price per NFT ~$5 USD 
-    uint256 public constant PRICE = 0.0027 ether;
+    uint256 public constant PRICE = 0.003 ether;
     // Tracks how many NFTs have been minted so far
     uint256 public currentSupply = 0;
     // Address that receives mint payments (burn address)
